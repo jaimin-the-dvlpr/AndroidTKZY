@@ -58,10 +58,13 @@ public class RegisterActivity extends AppCompatActivity {
                 Log.d(TAG, "onClick: attempting to register.");
 
                 //check for null valued EditText fields
-                if (!isEmpty(mEmail.getText().toString())
+                if (!isEmpty(mName.getText().toString())
+                        && !isEmpty(mEmail.getText().toString())
                         && !isEmpty(mPassword.getText().toString())
                         && !isEmpty(mConfirmPassword.getText().toString())
-                        && !isEmpty(mName.getText().toString())
+                        && !isEmpty(mBranch.getSelectedItem().toString())
+                        && !isEmpty(mPhoneNumber.getText().toString())
+                        && !isEmpty(mSemester.getSelectedItem().toString())
                         ) {
 
                     if (doStringsMatch(mPassword.getText().toString(), mConfirmPassword.getText().toString())) {
