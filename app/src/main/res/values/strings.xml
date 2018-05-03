@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">TKZY</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="emailhint">Enter your E-mail here</string>
+    <string name="passwordhint">Enter your Password here</string>
+    <string name="passwordagainhint">Again enter your Password</string>
+    <string name="forgotpwd">Forgot Password?</string>
+    <string name="registerhere">Register Here</string>
+    <string name="alreadyregistered">Already Registered? Login here</string>
+    <string name="password">Password</string>
+    <string name="email">E-mail</string>
+    <string name="name">Enter your Name here</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">Log Out</string>
+    <string name="userProfilePicture">Profile Picture</string>
+    <string name="branchhint">Enter your branch here</string>
+    <string name="phonehint">Enter your Phone number</string>
+    <string name="sem">Semester</string>
+    <string name="enterbranch">Choose your branch</string>
+    <string name="welcomestudent">Welcome Student</string>
+
+    <string name="syllabus">Syllabus</string>
+    <string name="getsyllabus">Get your Syllabus here</string>
+
+    <string name="quespaper">Question Paper</string>
+    <string name="getquespaper">Get your Previous Year Question papers here</string>
+
+    <string name="books">Books</string>
+    <string name="getbooklinks">Get links for various books here</string>
+
+    <string name="website">Websites and Lectures</string>
+    <string name="getwebsites">Get links for Lectures</string>
+
+    <string-array name="semesters">
+        <item>    1    </item>
+        <item>    2    </item>
+        <item>    3    </item>
+        <item>    4    </item>
+        <item>    5    </item>
+        <item>    6    </item>
+        <item>    7    </item>
+        <item>    8    </item>
+    </string-array>
+
+    <string-array name="branches">
+        <item>    CE    </item>
+        <item>    CSE    </item>
+        <item>    CT    </item>
+        <item>    ECE    </item>
+        <item>    EE    </item>
+        <item>    IE    </item>
+        <item>    IT    </item>
+        <item>    JFT    </item>
+        <item>    OOE    </item>
+        <item>    PST    </item>
+    </string-array>
+
+    <string-array name="studprof">
+        <item>Student</item>
+        <item>Professor</item>
+    </string-array>
+
+    <string name="dbnode_users">users</string>
+    <string name="field_user_id">user_id</string>
+
+</resources>
