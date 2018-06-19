@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgcolor"
+    android:background="#3e4549"
     tools:context=".LoggedInActivity">
 
     <LinearLayout
@@ -19,15 +18,16 @@
             android:background="#3e4549"
             android:gravity="center_horizontal">
 
-            <de.hdodenhof.circleimageview.CircleImageView
+            <!--
+            <ImageView
                 android:id="@+id/civUserProfilePicture"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="48dp"
                 android:src="@drawable/account"
-                app:civ_border_color="#ffffff"
-                app:civ_border_width="1dp" />
+                />
+            -->
 
             <TextView
                 android:id="@+id/tvWelcomeLoggedInActivity"
@@ -125,7 +125,7 @@
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <de.hdodenhof.circleimageview.CircleImageView
+                        <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:padding="10dp"
@@ -173,7 +173,7 @@
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <de.hdodenhof.circleimageview.CircleImageView
+                        <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:padding="10dp"
@@ -230,7 +230,7 @@
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <de.hdodenhof.circleimageview.CircleImageView
+                        <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:padding="10dp"
@@ -278,7 +278,7 @@
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <de.hdodenhof.circleimageview.CircleImageView
+                        <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:padding="10dp"

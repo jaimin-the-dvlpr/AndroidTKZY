@@ -32,6 +32,8 @@
     <string name="website">Websites and Lectures</string>
     <string name="getwebsites">Get links for Lectures</string>
 
+    <string name="content_desc">Typical Image Content Description</string>
+
     <string-array name="semesters">
         <item>    1    </item>
         <item>    2    </item>
