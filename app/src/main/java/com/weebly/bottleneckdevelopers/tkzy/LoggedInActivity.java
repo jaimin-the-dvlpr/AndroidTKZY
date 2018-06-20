@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -22,6 +23,7 @@ public class LoggedInActivity extends AppCompatActivity {
 
     private TextView mWelcomeTV, mLogOut, mBranchName, mCurrentSem;
     private ProgressBar mProgress;
+    private ImageView mCogIcon;
 
     private FirebaseUser user;
 
@@ -36,11 +38,15 @@ public class LoggedInActivity extends AppCompatActivity {
         mBranchName = findViewById(R.id.tvBranchNameLoggedInActivity);
         mCurrentSem = findViewById(R.id.tvCurrentSemesterLoggedInActivity);
         mProgress = findViewById(R.id.progressBarLoggedInActivity);
+        mCogIcon = findViewById(R.id.ivSettingsLogo);
 
         mWelcomeTV.setVisibility(View.INVISIBLE);
         mBranchName.setVisibility(View.INVISIBLE);
         mCurrentSem.setVisibility(View.INVISIBLE);
+        mLogOut.setVisibility(View.INVISIBLE);
+        mCogIcon.setVisibility(View.INVISIBLE);
         mProgress.setVisibility(View.VISIBLE);
+
 
         if (user != null) {
             getUserAccountData();
@@ -72,13 +78,15 @@ public class LoggedInActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot singleSnapshot : dataSnapshot.getChildren()) {
                     User user = singleSnapshot.getValue(User.class);
-                    mWelcomeTV.setText(getString(R.string.welcome) + " " + user.getName());
+                    mWelcomeTV.setText(user.getName());
                     mBranchName.setText(user.getBranch());
-                    mCurrentSem.setText("Semester: " + user.getSemester());
+                    mCurrentSem.setText(user.getSemester());
 
                     mWelcomeTV.setVisibility(View.VISIBLE);
                     mBranchName.setVisibility(View.VISIBLE);
                     mCurrentSem.setVisibility(View.VISIBLE);
+                    mLogOut.setVisibility(View.VISIBLE);
+                    mCogIcon.setVisibility(View.VISIBLE);
                     mProgress.setVisibility(View.INVISIBLE);
                 }
             }

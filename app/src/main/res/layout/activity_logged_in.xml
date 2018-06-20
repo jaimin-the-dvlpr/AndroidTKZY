@@ -14,39 +14,43 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="#3e4549"
-            android:gravity="center_horizontal">
+            android:background="#3e4549">
 
-            <!--
-            <ImageView
-                android:id="@+id/civUserProfilePicture"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="48dp"
-                android:src="@drawable/account"
-                />
-            -->
+            <TextView
+                android:id="@+id/tvCurrentSemesterLoggedInActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/textviewstyle_one"
+                android:fontFamily="@font/roboto_thin"
+                android:textColor="#ffffff"
+                android:textSize="48sp" />
 
             <TextView
                 android:id="@+id/tvWelcomeLoggedInActivity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="160dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
                 android:background="@drawable/textviewstyle_one"
-                android:text="@string/welcomestudent"
                 android:textColor="#ffffff"
-                android:textSize="16sp" />
+                android:textSize="32sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvWelcomeLoggedInActivity"
                 android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
                 <TextView
@@ -60,35 +64,32 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/tvCurrentSemesterLoggedInActivity"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="4dp"
-                    android:layout_marginLeft="4dp"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginStart="4dp"
-                    android:background="@drawable/textviewstyle_one"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
-
-                <TextView
                     android:id="@+id/tvLogOut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
-                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:background="@drawable/textviewstyle_two"
+                    android:gravity="end"
                     android:padding="8dp"
                     android:text="@string/logout"
+                    android:textColor="#60d6fa"
                     android:textAllCaps="true"
-                    android:textColor="#158cbc" />
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivSettingsLogo"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/cog"
+                    android:contentDescription="@string/settings" />
 
             </LinearLayout>
 
             <ProgressBar
                 android:id="@+id/progressBarLoggedInActivity"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_centerInParent="true"
                 android:indeterminate="true"
                 android:indeterminateDrawable="@drawable/progress_one" />
@@ -129,6 +130,7 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:padding="10dp"
+                            android:contentDescription="@string/icon"
                             android:src="@drawable/sem" />
 
                         <TextView
@@ -177,6 +179,7 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:padding="10dp"
+                            android:contentDescription="@string/icon"
                             android:src="@drawable/qpaper" />
 
                         <TextView
@@ -234,6 +237,7 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:padding="10dp"
+                            android:contentDescription="@string/icon"
                             android:src="@drawable/books" />
 
                         <TextView
@@ -282,6 +286,7 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:padding="10dp"
+                            android:contentDescription="@string/icon"
                             android:src="@drawable/web" />
 
                         <TextView

@@ -22,7 +22,11 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoggedInActivity" />
-        <activity android:name=".SyllabusActivity"></activity>
+        <activity android:name=".SyllabusActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

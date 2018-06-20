@@ -20,6 +20,9 @@
     <string name="enterbranch">Choose your branch</string>
     <string name="welcomestudent">Welcome Student</string>
 
+    <string name="settings">User Profile Settings</string>
+    <string name="icon">icon</string>
+
     <string name="syllabus">Syllabus</string>
     <string name="getsyllabus">Get your Syllabus here</string>
 
